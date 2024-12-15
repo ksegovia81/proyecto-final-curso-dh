@@ -1,6 +1,6 @@
 h1{
-    /* font-family: 'inconsolata', monospace;
-    font-family: 'robotomono´, monospace;     */
+    font-family: 'inconsolata', monospace;
+    font-family: 'robotomono´, monospace;     
 
     }
     /* NORMALIZACIÓN: */
@@ -239,7 +239,7 @@ h1{
     }
 
     .scroll-down{
-        diplay: none;
+        display: none;
     }
 
     @media (max-width: 768px){
