@@ -62,10 +62,11 @@ h1{
          
     }  
     
-    #menu-icon{
+    #menu-icon {
         font-size: 35px;
-        z-index: 101; /*Para que esté sobre el header*/
-        cursor: pointer; /*Para que aparezca la manito cuando ponemos el curso encima*/
+        z-index: 101;
+        cursor: pointer;
+        display: none;
     }
     #menu-toggle{
         display: none; /*nunca quiero que se vea el checkbox*/
@@ -242,7 +243,10 @@ h1{
         display: none;
     }
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
+        #menu-icon {
+            display: block;
+        }
 
         .menu-icon-action{
             display: block;
@@ -268,8 +272,7 @@ h1{
            grid-template-columns: 1fr;
         }
             
-
-        .navlist{
+        .navlist {
             position: absolute;
             top: 100%;
             right: -100%;
@@ -281,18 +284,19 @@ h1{
             align-items: center;
             padding: 30px 20px;
             transition: all 1s ease;
+        }
+    }
 
+        .navlist {
+            display: flex;
         }
 
-        .navlist a{
-            display: block;
-            margin: 7px 0;
-        }
-
-        .menu-toggle:checked + label.menu-icon-action + ul{
+        .navlist.open {
             right: 0;
         }
+       
+        
 
 
-        }
+        
     
